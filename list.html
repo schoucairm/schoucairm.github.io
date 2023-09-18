@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>  
-<html>  
+<!DOCTYPE HTML>
+<html>
     <header>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="table_style.css">
         <title>My Webpage Title</title>
     </header>
-    <body>  
+    <body>
         <!---Navigation--->
         <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -38,7 +38,7 @@
         * Add data to table
         * Add table to DOM
         */
-        fetch('./list_data.json')
+        fetch('./favorite_sfeats.json')
             .then(response => response.json())
             .then(data => {
 
@@ -46,7 +46,7 @@
                 This section creates the base table and finds the root json node.
                 */
                 var jsonTable = document.createElement("table");
-                var tr = jsonTable.insertRow(-1);   
+                var tr = jsonTable.insertRow(-1);
                 jsonTable.style.width = "75%";
                 let root;
                 for (let prop in data) {
@@ -58,10 +58,10 @@
                 */
                 let headers = Object.keys(data[root][0]);
                 headers.forEach(header => {
-                    var th = document.createElement("th");      
+                    var th = document.createElement("th");
                     th.innerHTML = header;
                     tr.appendChild(th);
-                })              
+                })
                 /*
                 This section adds the data into each row of the list
                 */
@@ -80,5 +80,5 @@
                 divContainer.innerHTML = "";
                 divContainer.appendChild(jsonTable);
             });
-    </script>  
+    </script>
 </html>
