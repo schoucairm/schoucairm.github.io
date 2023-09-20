@@ -1,27 +1,26 @@
-{
-	"restaurants": [{
-		"id": "0",
-		"name": "Kabana",
-		"cuisine": "Indian",
-		"city": "Berkeley",
-		"open": "12pm",
-		"close": "9pm"
-	},
-	{
-		"id": "1",
-		"name": "Cheeseboard",
-		"cuisine": "Italian",
-		"city": "Berkeley",
-		"open": "11am",
-		"close": "8pm"
-	},
-	{
-		"id": "2",
-		"name": "The Butcher's Son",
-		"cuisine": "American",
-		"city": "Berkeley",
-		"open": "9am",
-		"close": "3pm"
-	}]
-	
-}
+<?xml version="1.0" encoding = "UTF-8"?>
+<restaurants>
+    <restaurant>
+        <id>0</id>
+        <name>Kabana</name>
+        <cuisine>Indian</cuisine>
+        <city>Berkeley</city>
+        <open>12pm</open>
+        <close>9pm</close>
+    </restaurant>
+    <restaurant>
+        <id>1</id>
+        <name>Cheeseboard</name>
+        <cuisine>Italian</cuisine>
+        <city>Berkeley</city>
+        <open>11am</open>
+        <close>8pm</close>
+    </restaurant>
+        <id>0</id>
+        <name>The Butcher's Son</name>
+        <cuisine>American</cuisine>
+        <city>Berkeley</city>
+        <open>9am</open>
+        <close>3pm</close>
+    </restaurant>
+</restaurants>
